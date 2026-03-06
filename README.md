@@ -1,5 +1,9 @@
-# Architecture
+# TG-Workflow-controller
 
+A Telegram bot for controlling GitHub Actions workflows across multiple accounts.
+
+## Architecture
+```
 Telegram Bot
      │
      ▼
@@ -11,30 +15,32 @@ Bot Backend (Python)
             │
             ▼
 GitHub Actions
+```
 
 # MongoDB collections
 **accounts**
+```
 {
   "name": "main_account",
   "token": "github_pat_xxx"
 }
-
+```
 **repos**
-
+```
 {
   "account": "main_account",
   "repo": "user/repository"
 }
-
+```
 **workflows**
-
+```
 {
   "repo": "user/repository",
   "workflow": "build.yml"
 }
-
+```
 # Project structure
-
+```
 telegram-github-controller/
 │
 ├── bot.py
@@ -43,7 +49,7 @@ telegram-github-controller/
 ├── requirements.txt
 ├── Dockerfile
 └── start.sh
-
+```
 # Environment variables
 
 BOT_TOKEN=telegram_bot_token
