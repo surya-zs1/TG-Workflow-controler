@@ -3,7 +3,7 @@
 A Telegram bot for controlling GitHub Actions workflows across multiple accounts.
 
 ## Architecture
-```json
+```
 Telegram Bot
      │
      ▼
@@ -26,14 +26,14 @@ GitHub Actions
 }
 ```
 **repos**
-```
+```json
 {
   "account": "main_account",
   "repo": "user/repository"
 }
 ```
 **workflows**
-```
+```json
 {
   "repo": "user/repository",
   "workflow": "build.yml"
@@ -66,7 +66,7 @@ MONGO_URL=mongodb_connection_string
 /add_repo main user/repository
 
 **Add workflow :**
-
+```json
 /add_workflow user/repository build.yml
 
 **run workflow :**
