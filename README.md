@@ -3,7 +3,7 @@
 A Telegram bot for controlling GitHub Actions workflows across multiple accounts.
 
 ## Architecture
-```
+```json
 Telegram Bot
      │
      ▼
@@ -19,7 +19,7 @@ GitHub Actions
 
 # MongoDB collections
 **accounts**
-```
+```json
 {
   "name": "main_account",
   "token": "github_pat_xxx"
