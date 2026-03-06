@@ -51,34 +51,34 @@ telegram-github-controller/
 └── start.sh
 ```
 # Environment variables
-```json
+```
 BOT_TOKEN=telegram_bot_token
 MONGO_URL=mongodb_connection_string
 ```
 # Example usage in Telegram
 
 **Add github account :**
-
+```
 /add_account main ghp_xxxxx
-
+```
 **Add repo :**
-
+```
 /add_repo main user/repository
-
+```
 **Add workflow :**
-```json
+```
 /add_workflow user/repository build.yml
 ```
 **run workflow :**
-```json
+```
 /run user/repository build.yml
 ```
 **views runs :**
-```json
+```
 /runs user/repository
 ```
 **cancel runs :**
-```json
+```
 /cancel user/repository 123456789
 ```
 # Results 
