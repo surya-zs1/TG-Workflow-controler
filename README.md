@@ -68,19 +68,19 @@ MONGO_URL=mongodb_connection_string
 **Add workflow :**
 ```json
 /add_workflow user/repository build.yml
-
+```
 **run workflow :**
-
+```json
 /run user/repository build.yml
-
+```
 **views runs :**
-
+```json
 /runs user/repository
-
+```
 **cancel runs :**
-
+```json
 /cancel user/repository 123456789
-
+```
 # Results 
 
 Your Telegram bot becomes a multi-account GitHub CI controller.
